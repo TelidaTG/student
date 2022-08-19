@@ -13,9 +13,9 @@ import javax.persistence.*;
 public class Lessons {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    private Long id;
     @ManyToOne
     @JoinColumn(name = "group_id")
-    Groups groups;
+    private Groups groups;
 
 }

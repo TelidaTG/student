@@ -13,8 +13,8 @@ import javax.persistence.*;
 public class Courses {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
-    String title;
-    double price;
+    private Long id;
+    private String title;
+    private double price;
     Integer duration;
 }
